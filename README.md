@@ -174,3 +174,91 @@ function throwError(message: string): never {
 }
 
 ```
+
+#### 3. Interfaces: Defining custom data structures and object shapes using interfaces.
+```
+interface Person {
+  firstName:string,
+  lastName:string,
+  age:number,
+};
+
+function greet(person:Person):void{
+  console.log(`Hello, ${person.firstName} ${person.lastName}`)
+};
+
+const user:Person = {
+  firstName:'Abu',
+  lastName:'Bakar',
+  age:24
+};
+
+greet(user);
+
+// Optional Propeties 
+
+interface Shape {
+  name:string,
+  sides?:number,
+};
+
+const circle:Shape = {
+  name:'circle',
+};
+
+const triangle:Shape = {
+  name:'triangle',
+  sides:3,
+};
+
+const rectangule:Shape = {
+  name:'rectangule',
+  sides:4,
+};
+
+//Readonly Properties:
+
+interface Point {
+  readonly x:number,
+  readonly y:number,
+}
+
+const point:Point ={
+  x:23,
+  y:4,
+};
+
+// point.x = 48; //we assign because readonly properties
+
+//Function Signatures:
+
+const test:(x:number, y:number)=>number = (x, y) =>{
+  return x + y;
+}
+
+interface Calculator {
+  (x:number,y:number):number;
+};
+
+const add:Calculator = (x, y) => x + y;
+const subtruct:Calculator = (x, y) => x - y;
+
+//Extending Interfaces:
+
+interface Employee{
+  id:number,
+};
+
+interface FullTimeEmployee extends Employee {
+  salary:number,
+};
+
+const employee:Employee = {
+  id:1,
+};
+
+const fullTimeWorker:FullTimeEmployee={
+  id:3,
+  salary:4000000,
+};
+```
