@@ -289,7 +289,7 @@ getFullName():string{
 };
 ```
 
-##### 4.2 Create Object using Above class defination
+##### 4.2 Create Object using Above class definition
 ```
 // Create an instance using the class definition
 
