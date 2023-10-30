@@ -262,3 +262,29 @@ const fullTimeWorker:FullTimeEmployee={
   salary:4000000,
 };
 ```
+
+#### 4. Classes: Creating classes and working with object-oriented programming concepts.
+
+###### 4.1 class define in typescript
+
+```
+class Person {
+
+  //properties
+  firstName: string;
+  lastName: string;
+
+  //Constructor 
+  constructor(firstName:string,lastName:string){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  };
+
+//Method
+
+getFullName():string{
+  return (`${this.firstName} ${this.lastName}`)
+};
+ 
+};
+```
