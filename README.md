@@ -303,3 +303,59 @@ console.log(person2.getFullName());
 const person3 = new Person('MD', 'Zuniad');
 console.log(person3.getFullName());
 ```
+
+### Inheritance: we can create subclasses that inherit properties and methods from a parent class. 
+```
+class Person {
+
+  //properties
+  firstName: string;
+  lastName: string;
+
+  //Constructor 
+  constructor(firstName:string,lastName:string){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  };
+
+//Method
+
+getFullName():string{
+  return (`${this.firstName} ${this.lastName}`)
+};
+ 
+};
+
+// Create an instance using the class definition
+
+const person1 = new Person('Abu','Bakar');
+
+console.log(person1.getFullName());
+
+const person2 = new Person('Abul', 'Kasam');
+console.log(person2.getFullName());
+
+const person3 = new Person('MD', 'Zuniad');
+console.log(person3.getFullName());
+
+//Inheritance: we can create subclasses that inherit properties and methods from a parent class. 
+
+class Student extends Person{
+  studentId:number;
+  constructor(firstName:string, lastName:string, studentId:number){
+    super(firstName,lastName); // access parent class properties with use of super keyword
+    this.studentId = studentId;
+  };
+
+  //Method
+  getStudentInfo():string{
+    return `Student Name: ${this.getFullName()} Id: ${this.studentId}`;
+  };
+};
+
+const student1 = new Student('Abu', 'Bakar', 190311002);
+console.log(student1.getStudentInfo());
+
+const student2 = new Student('Abul','Kasam', 190311012);
+console.log(student2.getStudentInfo());
+```
