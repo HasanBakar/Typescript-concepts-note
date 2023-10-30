@@ -288,3 +288,18 @@ getFullName():string{
  
 };
 ```
+
+##### 4.2 Create Object using Above class defination
+```
+// Create an instance using the class definition
+
+const person1 = new Person('Abu','Bakar');
+
+console.log(person1.getFullName());
+
+const person2 = new Person('Abul', 'Kasam');
+console.log(person2.getFullName());
+
+const person3 = new Person('MD', 'Zuniad');
+console.log(person3.getFullName());
+```
