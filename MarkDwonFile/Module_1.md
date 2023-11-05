@@ -34,9 +34,48 @@
     console.log(isAdmin, isDone);
     ```
     - null data type
+    ```typescript
+    // null type (that is special type)
+    const vacancy:null = null;
+    console.log(vacancy);
+    ```
     - undefined data type
+    ```typescript 
+    // undefined type
+    const countryData:undefined = undefined;
+    console.log(countryData);
+    ```
     - symbol data type
+    ```typescript
+    // Declare a variable with the symbol data type
+    const mySymbol: symbol = Symbol('mySymbol');
+
+    // We can also create a symbol without an optional description
+    const anotherSymbol: symbol = Symbol();
+
+    // Symbols are unique, so even if you create a symbol with the same description,
+    // it will be a different symbol instance
+    const symbol1: symbol = Symbol('example');
+    const symbol2: symbol = Symbol('example');
+
+    console.log(symbol1 === symbol2); // false, they are not the same symbol
+
+    ```
     - any data type (it is not preferable for use)
+    ```typescript
+    
+    //implicitly any type variable declaration
+    let hey;
+    hey = 2;
+    hey = 'Hello';
+    //explicitly any type variable declaration
+    let d:any;
+    d = 3;
+    d = false;
+    d = 'Welcome!';
+    
+    console.log(hey, d)
+    ```
 2. There are also many types of non primitive data as such:
     - Array
     - Tuple
