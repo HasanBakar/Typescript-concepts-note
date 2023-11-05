@@ -14,7 +14,25 @@
     console.log(age);
     ```
     - string data type 
+    ```typescript
+    //implicitly string type variable declaration
+    const fullName = 'Abu Bakar';
+    console.log(fullName);
+    //explicitly string type variable declaration
+    const firstName:string = 'Abu';
+    const lastName:string = 'Bakar'
+    console.log(firstName + " " + lastName);
+    ```
     - boolean data type 
+    ```typescript
+    //implicitly boolean type variable declaration
+    const married:boolean = false;
+    console.log(married);
+    //explicitly boolean type variable declaration
+    const isDone:boolean = true;
+    const isAdmin:boolean = false;
+    console.log(isAdmin, isDone);
+    ```
     - null data type
     - undefined data type
     - symbol data type
