@@ -80,3 +80,29 @@
     - Array
     - Tuple
     - Object
+    ```typescript
+      //Reference Type or non primitive ---> Object 
+    //implicitly type object type variable declaration
+    const Player = {
+      firstName:'Abu',
+      lastName:'Bakar'
+    };
+    
+    //explicitly type object type variable declaration
+    const user:{
+      firstName:string;
+      lastName:string;
+      nickName:string;
+      age:number;
+      isGraduate:boolean;
+      skinColor?:string;//set optional property in object
+      company:"Programming Hero";//custom and constant type --> when a value use as a type which is called literal type
+    } = {
+      firstName:'Abu',
+      lastName:'Bakar',
+      nickName:'Hasan',
+      age:23,
+      isGraduate:false,
+      company:'Programming Hero',
+    };
+        ```
