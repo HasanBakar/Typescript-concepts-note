@@ -10,8 +10,7 @@
     console.log(roll);
     //explicitly number type variable declaration
     const age:number = 23;
-    console.log(age);
-    ```
+    console.log(age);```
     - string data type 
     - boolean data type 
     - null data type
