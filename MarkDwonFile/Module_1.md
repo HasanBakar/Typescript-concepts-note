@@ -78,7 +78,23 @@
     ```
 2. There are also many types of non primitive data as such:
     - Array
+    ```typescript
+    // implicitly array declaration 
+    const numbers = [1, 2, 4, 5, 8];
+    console.log(numbers);
+    // explicitly array declaration
+    const fruits:string[]=['Orange', 'Apple', 'Charry'];
+    console.log(fruits);
+    ```
     - Tuple
+    ```typescript
+    // implicitly array declaration 
+    const customData = ['Apple', 4, true];
+    console.log(customData);
+    // explicitly tuple declaration
+    const t:[string, number, boolean]=['Orange', 3434, true];
+    console.log(t);
+    ```
     - Object
     ```typescript
       //Reference Type or non primitive ---> Object 
@@ -87,7 +103,7 @@
       firstName:'Abu',
       lastName:'Bakar'
     };
-    
+
     //explicitly type object type variable declaration
     const user:{
       firstName:string;
@@ -105,4 +121,4 @@
       isGraduate:false,
       company:'Programming Hero',
     };
-        ```
+    ```
