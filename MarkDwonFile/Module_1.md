@@ -6,14 +6,14 @@
 1. There are also many types of primitive data as such:
     - number data type
     <pre>
-        ```
+        ```typescript
         //implicitly number type variable declaration
         const roll = 122;
         console.log(roll);
         //explicitly number type variable declaration
         const age:number = 23;
         console.log(age);
-        
+
         ```
     </pre>
     - string data type 
