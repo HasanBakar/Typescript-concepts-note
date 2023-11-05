@@ -1,0 +1,28 @@
+{
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.suggest.localityBonus": true,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.quickSuggestionsDelay": 10,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.suggest.preview": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggestSelection": "first",
+    "editor.parameterHints.enabled": true,
+    "editor.wordBasedSuggestions": true,
+    "editor.tabCompletion": "off",
+    "editor.language.brackets": [
+
+    ],
+    "editor.language.colorizedBracketPairs": [
+    
+    ],
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "editor.inlineSuggest.showToolbar": "always",
+        "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+}
