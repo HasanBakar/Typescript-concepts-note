@@ -132,6 +132,28 @@
 
   console.log(add(45,5));
   ```
+  - ### Function Expression (Anonymous Function) 
+  ```typescript
+  const subtract = function(a:number, b:number):number{
+    return a - b;
+  }
+
+  console.log(subtract(12, 4));//function calling and consoling
+  ```
+  - ### Arrow Function (Function Expression with Short Syntax) </br>
+  Arrow functions provide a concise way to define functions. They capture the surrounding context (this) automatically.
+  ```typescript
+  const multiply = (num1:number, num2:number):number => num1 * num2;
+  ```
+  - ### Function Constructor
+  we can use the Function constructor to create functions dynamically. However, this approach is not recommended for most use cases due to security and performance concerns.
+  ```typescript
+  const divide = new Function('a','b', 'return a/b');
+
+  const result = divide(8, 2);
+  
+  console.log(result);
+  ```
 
 
 - ### Spread Operator use with array example:
