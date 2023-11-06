@@ -123,6 +123,17 @@
       company:'Programming Hero',
     };
     ```
+- ### Function concepts in Typescript
+  -  normal function structure or most common structure
+  ```typescript
+  function add(num1:number, num2:number):number{
+  return num1 + num2;
+  }
+
+  console.log(add(45,5));
+  ```
+
+
 - ### Spread Operator use with array example:
 Spread Operator is a special and powerful Operator </br><span style="color:orange">Which is used for copy array element one to another array</span>
 ```typescript
