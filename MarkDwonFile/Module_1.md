@@ -1,6 +1,6 @@
 # Module 01 : Typescript with programming hero level 2.0
 ## Basic data types in typescript
-- There are two types of data type in typescript
+- ### There are two types of data type in typescript
     i. Primitive data type
     ii. Non Primitive data type 
 1. There are also many types of primitive data as such:
@@ -77,6 +77,7 @@
     console.log(hey, d)
     ```
 2. There are also many types of non primitive data as such:
+
     - Array
     ```typescript
     // implicitly array declaration 
@@ -122,3 +123,21 @@
       company:'Programming Hero',
     };
     ```
+- ### Spread Operator use with array example:
+Spread Operator is a special and powerful Operator <span style="color:orange">Which is used for copy array element one to another array</span>
+```typescript
+//spread operator with array
+
+const bros1:string[] = ['Siaful','Faruk', 'Zayad', 'Zihad', 'Morshed'];
+
+const bros2:string[] = ['Abu Bakar', 'Abul Kasam', 'Md. Zunaid'];
+
+const brothers:string[] = [...bros1, ...bros2];
+
+console.log(bros1);
+
+console.log(bros2);
+
+console.log(brothers);
+```
+
