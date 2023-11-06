@@ -124,7 +124,7 @@
     };
     ```
 - ### Spread Operator use with array example:
-Spread Operator is a special and powerful Operator <span style="color:orange">Which is used for copy array element one to another array</span>
+Spread Operator is a special and powerful Operator </br><span style="color:orange">Which is used for copy array element one to another array</span>
 ```typescript
 //spread operator with array
 
@@ -140,4 +140,35 @@ console.log(bros2);
 
 console.log(brothers);
 ```
+#### copy object property one object to another object with the help of spread Operator
+```typescript
+{// this curly brackets use for create block of code 
+//Spread Operator example with object
+  const name:{
+    firstName:string;
+    lastName:string;
+  } = {
+    firstName:'Abu',
+    lastName:'Bakar',
+  };
+ const education:{
+  ssc:string;
+  hsc:string;
+  honurs:string;
+  Msc?:string;
+ } = {
+    ssc:'Madrasha',
+    hsc:'MNAC',
+    honurs:'UCTC',
+  };
+const user = {
+  id:123123,
+  ...name,
+  ...education
+}
 
+console.log(name);
+console.log(education);
+console.log(user);
+}
+```
