@@ -151,9 +151,54 @@
   const divide = new Function('a','b', 'return a/b');
 
   const result = divide(8, 2);
-  
+
   console.log(result);
   ```
+  - ### A function is said to be method when we use a function inside object as property or defining class then inside the this class
+   Method with object 
+   ```typescript
+   const poorUser:{
+    firstName:string;
+    lastName:string;
+    balance:number;
+    addBalance:Function;
+  }= {
+  firstName:'Abu',
+  lastName:'Bakar',
+  balance:0,
+  addBalance(balance:number){
+      return this.balance + balance;
+  }
+  }
+
+  console.log(poorUser.addBalance(1000));//here addBalance is method
+  console.log(poorUser)
+   ```
+   - ### Method in a Class:
+   We can define a function as a method within a class.
+   ```typescript
+   class Calculator {
+  add(a:number, b:number):number{
+    return a + b;
+    }
+  }
+
+  const calc = new Calculator();
+  const result = calc.add(34,6);
+
+  console.log(result);
+   ```
+   - ### Function with Optional and Default Parameters:
+   TypeScript allows you to define optional and default parameters in a function.
+   ```typescript
+   function greet(name: string, greeting: string = 'Hello', punctuation?: string): string {
+    return `${greeting}, ${name}${punctuation || ''}`;
+  }
+
+  console.log(greet('Alice')); // Output: Hello, Alice
+  console.log(greet('Bob', 'Hi', '!')); // Output: Hi, Bob!
+
+   ```
 
 
 - ### Spread Operator use with array example:
